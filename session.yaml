@@ -1,0 +1,14 @@
+session_name: qutecute
+windows:
+  - window_name: haskell
+    layout: main-vertical
+    panes:
+      - shell_command:
+        - cd /home/hippoid/fun/qutecute
+    options:
+      main-pane-width: 80
+
+  - window_name: latex
+    layout: tiled
+    shell_command_before:
+      - cd /home/hippoid/fun/qutecute/doc && git status
